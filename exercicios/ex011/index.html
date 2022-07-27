@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamnaho do seu navegador.</p>
+
+
+    <!--IMAGENS-->
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--AUDIOS-->
+    <h1>Reproduzir audio</h1>
+    <p>vamos reproduzir áudios em HTML5</p><!--exeplo de reprudução de audio-->
+    <audio preload="metadata" controls autoplays loop>
+        <source src="midia/play-teste.mp3" type="audio/mp3"> 
+        <source src="midia/play-teste.ogg" type="audio/ogg"> 
+        <source src="midia/play-teste.wav" type="audio/wav"> 
+        <p>seu navegador não consegue reproduzir áudio. <a href="midia/play-teste.mp3">Clique aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+
+    <!--VIDEOS-->
+    
+    <H1>Inserir video localmente</H1>
+    <video width="560" poster="imagens/coelho.jpg" controls>
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.m4v" type="video/m4v">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.ogv" type="video/ogg">
+        <p>seu navegador não tem compatibilidade com reprudução de vídeos</p>
+    </video>
+
+    <H1>inserindo videos do youtube</H1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4B2sOMEoLKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    
+</body>
+</html>
